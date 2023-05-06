@@ -50,6 +50,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\disciple.png" />
+	  <None Remove="Resources\Images\forward.png" />
 	  <None Remove="Resources\Images\magician.png" />
 	  <None Remove="Resources\Images\ripper.png" />
 	</ItemGroup>
