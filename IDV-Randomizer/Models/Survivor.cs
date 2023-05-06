@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IDV_Randomizer.Models
 {
-    public class Survivor : BaseCharacter
+    public sealed class Survivor : BaseCharacter
     {
         public enum Job
         {
