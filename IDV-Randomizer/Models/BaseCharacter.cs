@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDV_Randomizer.Models
 {
-    public class BaseCharacter
+    public abstract class BaseCharacter
     {
         private string name;
         private ImageSource imageSource;
