@@ -7,8 +7,13 @@
         <Button x:Name="GenerateButton" 
                 Text="Generate"
                 Clicked="GenerateButton_Clicked"/>
-        <Label x:Name="CharacterLabel"
-               Text="Name"/>
+        <Label x:Name="CharacterLabel"/>
+        <Label x:Name="SurvivorPrimaryJobLabel"
+               IsVisible="False"/>
+        <Label x:Name="SurvivorSecondaryJobLabel"
+               IsVisible="False"/>
+        <Label x:Name="HunterSkillLabel"
+               IsVisible="False"/>
         <Image x:Name="CharacterImage"
                WidthRequest="144"
                HeightRequest="204"/>
