@@ -5,10 +5,12 @@ namespace IDV_Randomizer;
 public partial class MainPage : ContentPage
 {
     private List<BaseCharacter> charactersList;
+    private Random random;
 
     public MainPage()
     {
         InitializeComponent();
+        random = new Random();
         Survivor magician = new("Magician", "magician.png", Survivor.Job.Kiter);
         Survivor forward = new("Forward", "forward.png", Survivor.Job.Assist, Survivor.Job.Rescuer);
         Hunter ripper = new("Ripper", "ripper.png");
@@ -24,8 +26,7 @@ public partial class MainPage : ContentPage
 
     private void GenerateButton_Clicked(object sender, EventArgs e)
     {
-        Random random = new Random();
-        var chosenCharacter = charactersList[random.Next(charactersList.Count)];
+        BaseCharacter chosenCharacter = charactersList[GetRandomIndex(charactersList)];
         CharacterLabel.Text = chosenCharacter.GetName();
         CharacterImage.Source = chosenCharacter.GetImageSource();
         if (chosenCharacter is Survivor)
@@ -50,8 +51,13 @@ public partial class MainPage : ContentPage
             SurvivorPrimaryJobLabel.IsVisible = false;
             SurvivorSecondaryJobLabel.IsVisible = false;
             HunterSkillLabel.IsVisible = true;
-            HunterSkillLabel.Text = hunter.GetSkillsList()[random.Next(hunter.GetSkillsList().Count)].ToString();
+            HunterSkillLabel.Text = hunter.GetSkillsList()[GetRandomIndex(hunter.GetSkillsList())].ToString();
         }
+    }
+
+    private int GetRandomIndex<T>(List<T> list)
+    {
+        return random.Next(list.Count);
     }
 }
 
