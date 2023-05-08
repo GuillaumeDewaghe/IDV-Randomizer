@@ -8,23 +8,22 @@ namespace IDV_Randomizer.Models
 {
     public abstract class BaseCharacter
     {
-        private string name;
-        private ImageSource imageSource;
+        public string Name
+        {
+            get; 
+            private set;
+        }
+
+        public ImageSource ImageSource 
+        { 
+            get; 
+            private set;
+        }
 
         public BaseCharacter(string name, ImageSource imageSource)
         {
-            this.name = name;
-            this.imageSource = imageSource;
-        }
-
-        public string GetName()
-        {
-            return name;
-        }
-
-        public ImageSource GetImageSource()
-        {
-            return imageSource;
+            Name = name;
+            ImageSource = imageSource;
         }
     }
 }
