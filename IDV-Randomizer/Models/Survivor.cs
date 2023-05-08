@@ -9,37 +9,27 @@ namespace IDV_Randomizer.Models
 {
     public sealed class Survivor : BaseCharacter
     {
-        public enum Job
+        public Type PrimaryType
         {
-            Kiter,
-            Assist,
-            Rescuer,
-            Decoder,
-            None
+            get;
+            private set;
         }
 
-        private Job primaryJob;
-        private Job secondaryJob;
-
-        public Survivor(string name, ImageSource imageSource, Job primaryJob, Job secondaryJob = Job.None) : base(name, imageSource)
+        public Type SecondaryType
         {
-            this.primaryJob = primaryJob;
-            this.secondaryJob = secondaryJob;
+            get;
+            private set;
         }
 
-        public Job GetPrimaryJob()
+        public Survivor(string name, ImageSource imageSource, Type primaryType, Type secondaryType = Type.None) : base(name, imageSource)
         {
-            return primaryJob;
+            PrimaryType = primaryType;
+            SecondaryType = secondaryType;
         }
 
-        public Job GetSecondaryJob() 
+        public bool HasSecondaryType()
         {
-            return secondaryJob;
-        }
-
-        public bool HasSecondaryJob()
-        {
-            return secondaryJob != Job.None;
+            return SecondaryType != Type.None;
         }
     }
 }
