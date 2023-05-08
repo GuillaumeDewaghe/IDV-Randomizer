@@ -5,7 +5,7 @@ namespace IDV_Randomizer;
 
 public partial class MainPage : ContentPage
 {
-    private List<BaseCharacter> charactersList;
+    private List<Character> charactersList;
     private List<Skill> skillsList;
     private Random random;
 
@@ -18,7 +18,7 @@ public partial class MainPage : ContentPage
         Survivor forward = new("Forward", "forward.png", Type.Assist, Type.Rescue);
         Hunter ripper = new("Ripper", "ripper.png");
         Hunter disciple = new("Disciple", "disciple.png");
-        charactersList = new List<BaseCharacter>
+        charactersList = new List<Character>
         {
             magician,
             forward,
@@ -33,7 +33,7 @@ public partial class MainPage : ContentPage
 
     private void GenerateButton_Clicked(object sender, EventArgs e)
     {
-        BaseCharacter chosenCharacter = charactersList[GetRandomIndex(charactersList)];
+        Character chosenCharacter = charactersList[GetRandomIndex(charactersList)];
         CharacterLabel.Text = chosenCharacter.Name;
         CharacterImage.Source = chosenCharacter.ImageSource;
         if (chosenCharacter is Survivor)
