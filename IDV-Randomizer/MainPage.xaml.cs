@@ -1,20 +1,21 @@
 ﻿using IDV_Randomizer.Models;
+using Type = IDV_Randomizer.Models.Type;
 
 namespace IDV_Randomizer;
 
 public partial class MainPage : ContentPage
 {
     private List<BaseCharacter> charactersList;
-    private List<Hunter.Skill> skillsList;
+    private List<Skill> skillsList;
     private Random random;
 
     public MainPage()
     {
         InitializeComponent();
         random = new Random();
-        skillsList = new List<Hunter.Skill>();
-        Survivor magician = new("Magician", "magician.png", Survivor.Job.Kiter);
-        Survivor forward = new("Forward", "forward.png", Survivor.Job.Assist, Survivor.Job.Rescuer);
+        skillsList = new List<Skill>();
+        Survivor magician = new("Magician", "magician.png", Type.Contain);
+        Survivor forward = new("Forward", "forward.png", Type.Assist, Type.Rescue);
         Hunter ripper = new("Ripper", "ripper.png");
         Hunter disciple = new("Disciple", "disciple.png");
         charactersList = new List<BaseCharacter>
@@ -24,7 +25,7 @@ public partial class MainPage : ContentPage
             ripper,
             disciple
         };
-        foreach (Hunter.Skill skill in Enum.GetValues(typeof(Hunter.Skill)))
+        foreach (Skill skill in Enum.GetValues(typeof(Skill)))
         {
             skillsList.Add(skill);
         }
@@ -33,18 +34,18 @@ public partial class MainPage : ContentPage
     private void GenerateButton_Clicked(object sender, EventArgs e)
     {
         BaseCharacter chosenCharacter = charactersList[GetRandomIndex(charactersList)];
-        CharacterLabel.Text = chosenCharacter.GetName();
-        CharacterImage.Source = chosenCharacter.GetImageSource();
+        CharacterLabel.Text = chosenCharacter.Name;
+        CharacterImage.Source = chosenCharacter.ImageSource;
         if (chosenCharacter is Survivor)
         {
             Survivor survivor = chosenCharacter as Survivor;
             HunterSkillLabel.IsVisible = false;
             SurvivorPrimaryJobLabel.IsVisible = true;
-            SurvivorPrimaryJobLabel.Text = survivor.GetPrimaryJob().ToString();
-            if (survivor.HasSecondaryJob())
+            SurvivorPrimaryJobLabel.Text = survivor.PrimaryType.ToString();
+            if (survivor.HasSecondaryType())
             {
                 SurvivorSecondaryJobLabel.IsVisible = true;
-                SurvivorSecondaryJobLabel.Text = survivor.GetSecondaryJob().ToString();
+                SurvivorSecondaryJobLabel.Text = survivor.SecondaryType.ToString();
             }
             else
             {
@@ -56,9 +57,9 @@ public partial class MainPage : ContentPage
             Hunter hunter = chosenCharacter as Hunter;
             SurvivorPrimaryJobLabel.IsVisible = false;
             SurvivorSecondaryJobLabel.IsVisible = false;            
-            hunter.SetSkill(skillsList[GetRandomIndex(skillsList)]);
+            hunter.Skill = skillsList[GetRandomIndex(skillsList)];
             HunterSkillLabel.IsVisible = true;
-            HunterSkillLabel.Text = hunter.GetSkill().ToString();
+            HunterSkillLabel.Text = hunter.Skill.ToString();
         }
     }
 
