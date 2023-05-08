@@ -14,13 +14,14 @@ namespace IDV_Randomizer.Models
             Kiter,
             Assist,
             Rescuer,
-            Decoder
+            Decoder,
+            None
         }
 
         private Job primaryJob;
-        private Job? secondaryJob;
+        private Job secondaryJob;
 
-        public Survivor(string name, ImageSource imageSource, Job primaryJob, Job? secondaryJob = null) : base(name, imageSource)
+        public Survivor(string name, ImageSource imageSource, Job primaryJob, Job secondaryJob = Job.None) : base(name, imageSource)
         {
             this.primaryJob = primaryJob;
             this.secondaryJob = secondaryJob;
@@ -31,14 +32,14 @@ namespace IDV_Randomizer.Models
             return primaryJob;
         }
 
-        public Job? GetSecondaryJob() 
+        public Job GetSecondaryJob() 
         {
             return secondaryJob;
         }
 
         public bool HasSecondaryJob()
         {
-            return secondaryJob != null;
+            return secondaryJob != Job.None;
         }
     }
 }
