@@ -5,12 +5,14 @@ namespace IDV_Randomizer;
 public partial class MainPage : ContentPage
 {
     private List<BaseCharacter> charactersList;
+    private List<Hunter.Skill> skillsList;
     private Random random;
 
     public MainPage()
     {
         InitializeComponent();
         random = new Random();
+        skillsList = new List<Hunter.Skill>();
         Survivor magician = new("Magician", "magician.png", Survivor.Job.Kiter);
         Survivor forward = new("Forward", "forward.png", Survivor.Job.Assist, Survivor.Job.Rescuer);
         Hunter ripper = new("Ripper", "ripper.png");
@@ -22,6 +24,10 @@ public partial class MainPage : ContentPage
             ripper,
             disciple
         };
+        foreach (Hunter.Skill skill in Enum.GetValues(typeof(Hunter.Skill)))
+        {
+            skillsList.Add(skill);
+        }
     }
 
     private void GenerateButton_Clicked(object sender, EventArgs e)
@@ -49,9 +55,10 @@ public partial class MainPage : ContentPage
         {
             Hunter hunter = chosenCharacter as Hunter;
             SurvivorPrimaryJobLabel.IsVisible = false;
-            SurvivorSecondaryJobLabel.IsVisible = false;
+            SurvivorSecondaryJobLabel.IsVisible = false;            
+            hunter.SetSkill(skillsList[GetRandomIndex(skillsList)]);
             HunterSkillLabel.IsVisible = true;
-            HunterSkillLabel.Text = hunter.GetSkillsList()[GetRandomIndex(hunter.GetSkillsList())].ToString();
+            HunterSkillLabel.Text = hunter.GetSkill().ToString();
         }
     }
 

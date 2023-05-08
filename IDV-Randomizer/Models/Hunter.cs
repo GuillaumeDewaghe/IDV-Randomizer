@@ -19,20 +19,21 @@ namespace IDV_Randomizer.Models
             Blink
         }
 
-        private List<Skill> skillsList;
+        private Skill skill;
 
         public Hunter(string name, ImageSource imageSource) : base(name, imageSource)
         {
-            skillsList = new List<Skill>();
-            foreach (Skill skill in Enum.GetValues(typeof(Skill)))
-            {
-                skillsList.Add(skill);
-            }
+
         }
 
-        public List<Skill> GetSkillsList()
+        public Skill GetSkill()
         {
-            return skillsList;
+            return skill;
+        }
+
+        public void SetSkill(Skill skill)
+        {
+            this.skill = skill;
         }
     }
 }
