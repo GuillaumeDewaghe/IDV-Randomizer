@@ -738,9 +738,9 @@ namespace IDV_Randomizer.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Photographer.
         /// </summary>
-        public static string PhotographerNamer {
+        public static string PhotographerName {
             get {
-                return ResourceManager.GetString("PhotographerNamer", resourceCulture);
+                return ResourceManager.GetString("PhotographerName", resourceCulture);
             }
         }
         
