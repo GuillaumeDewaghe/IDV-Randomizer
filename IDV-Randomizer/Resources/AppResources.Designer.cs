@@ -61,11 +61,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to acrobat.png.
+        /// </summary>
+        public static string AcrobatImage {
+            get {
+                return ResourceManager.GetString("AcrobatImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Acrobat.
         /// </summary>
         public static string AcrobatName {
             get {
                 return ResourceManager.GetString("AcrobatName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to antiquarian.png.
+        /// </summary>
+        public static string AntiquarianImage {
+            get {
+                return ResourceManager.GetString("AntiquarianImage", resourceCulture);
             }
         }
         
@@ -88,11 +106,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to barmaid.png.
+        /// </summary>
+        public static string BarmaidImage {
+            get {
+                return ResourceManager.GetString("BarmaidImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Barmaid.
         /// </summary>
         public static string BarmaidName {
             get {
                 return ResourceManager.GetString("BarmaidName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to batter.png.
+        /// </summary>
+        public static string BatterImage {
+            get {
+                return ResourceManager.GetString("BatterImage", resourceCulture);
             }
         }
         
@@ -133,6 +169,15 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to composer.png.
+        /// </summary>
+        public static string ComposerImage {
+            get {
+                return ResourceManager.GetString("ComposerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Composer.
         /// </summary>
         public static string ComposerName {
@@ -142,11 +187,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to coordinator.png.
+        /// </summary>
+        public static string CoordinatorImage {
+            get {
+                return ResourceManager.GetString("CoordinatorImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Coordinator.
         /// </summary>
         public static string CoordinatorName {
             get {
                 return ResourceManager.GetString("CoordinatorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cowboy.png.
+        /// </summary>
+        public static string CowboyImage {
+            get {
+                return ResourceManager.GetString("CowboyImage", resourceCulture);
             }
         }
         
@@ -169,6 +232,15 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to doctor.png.
+        /// </summary>
+        public static string DoctorImage {
+            get {
+                return ResourceManager.GetString("DoctorImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Doctor.
         /// </summary>
         public static string DoctorName {
@@ -187,6 +259,15 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to embalmer.png.
+        /// </summary>
+        public static string EmbalmerImage {
+            get {
+                return ResourceManager.GetString("EmbalmerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Embalmer.
         /// </summary>
         public static string EmbalmerName {
@@ -196,11 +277,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to enchantress.png.
+        /// </summary>
+        public static string EnchantressImage {
+            get {
+                return ResourceManager.GetString("EnchantressImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enchantress.
         /// </summary>
         public static string EnchantressName {
             get {
                 return ResourceManager.GetString("EnchantressName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to entomologist.png.
+        /// </summary>
+        public static string EntomologistImage {
+            get {
+                return ResourceManager.GetString("EntomologistImage", resourceCulture);
             }
         }
         
@@ -223,6 +322,15 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to explorer.png.
+        /// </summary>
+        public static string ExplorerImage {
+            get {
+                return ResourceManager.GetString("ExplorerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Explorer.
         /// </summary>
         public static string ExplorerName {
@@ -241,6 +349,15 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to female_dancer.png.
+        /// </summary>
+        public static string FemaleDancerImage {
+            get {
+                return ResourceManager.GetString("FemaleDancerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Female Dancer.
         /// </summary>
         public static string FemaleDancerName {
@@ -250,11 +367,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to first_officer.png.
+        /// </summary>
+        public static string FirstOfficerImage {
+            get {
+                return ResourceManager.GetString("FirstOfficerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Officer.
         /// </summary>
         public static string FirstOfficerName {
             get {
                 return ResourceManager.GetString("FirstOfficerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to forward.png.
+        /// </summary>
+        public static string ForwardImage {
+            get {
+                return ResourceManager.GetString("ForwardImage", resourceCulture);
             }
         }
         
@@ -277,6 +412,15 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to gardener.png.
+        /// </summary>
+        public static string GardenerImage {
+            get {
+                return ResourceManager.GetString("GardenerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gardener.
         /// </summary>
         public static string GardenerName {
@@ -291,6 +435,15 @@ namespace IDV_Randomizer.Resources {
         public static string GeishaName {
             get {
                 return ResourceManager.GetString("GeishaName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to grave_keeper.png.
+        /// </summary>
+        public static string GraveKeeperImage {
+            get {
+                return ResourceManager.GetString("GraveKeeperImage", resourceCulture);
             }
         }
         
@@ -331,11 +484,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to journalist.png.
+        /// </summary>
+        public static string JournalistImage {
+            get {
+                return ResourceManager.GetString("JournalistImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Journalist.
         /// </summary>
         public static string JournalistName {
             get {
                 return ResourceManager.GetString("JournalistName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to lawyer.png.
+        /// </summary>
+        public static string LawyerImage {
+            get {
+                return ResourceManager.GetString("LawyerImage", resourceCulture);
             }
         }
         
@@ -349,11 +520,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to little_girl.png.
+        /// </summary>
+        public static string LittleGirlImage {
+            get {
+                return ResourceManager.GetString("LittleGirlImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &quot;Little Girl&quot;.
         /// </summary>
         public static string LittleGirlName {
             get {
                 return ResourceManager.GetString("LittleGirlName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to lucky_guy.png.
+        /// </summary>
+        public static string LuckyGuyImage {
+            get {
+                return ResourceManager.GetString("LuckyGuyImage", resourceCulture);
             }
         }
         
@@ -376,11 +565,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to magician.png.
+        /// </summary>
+        public static string MagicianImage {
+            get {
+                return ResourceManager.GetString("MagicianImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Magician.
         /// </summary>
         public static string MagicianName {
             get {
                 return ResourceManager.GetString("MagicianName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to mechanic.png.
+        /// </summary>
+        public static string MechanicImage {
+            get {
+                return ResourceManager.GetString("MechanicImage", resourceCulture);
             }
         }
         
@@ -394,11 +601,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to mercenary.png.
+        /// </summary>
+        public static string MercenaryImage {
+            get {
+                return ResourceManager.GetString("MercenaryImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mercenary.
         /// </summary>
         public static string MercenaryName {
             get {
                 return ResourceManager.GetString("MercenaryName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to minds_eye.png.
+        /// </summary>
+        public static string MindsEyeImage {
+            get {
+                return ResourceManager.GetString("MindsEyeImage", resourceCulture);
             }
         }
         
@@ -439,11 +664,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to novelist.png.
+        /// </summary>
+        public static string NovelistImage {
+            get {
+                return ResourceManager.GetString("NovelistImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Novelist.
         /// </summary>
         public static string NovelistName {
             get {
                 return ResourceManager.GetString("NovelistName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to painter.png.
+        /// </summary>
+        public static string PainterImage {
+            get {
+                return ResourceManager.GetString("PainterImage", resourceCulture);
             }
         }
         
@@ -457,11 +700,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to patient_png.
+        /// </summary>
+        public static string PatientImage {
+            get {
+                return ResourceManager.GetString("PatientImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Patient.
         /// </summary>
         public static string PatientName {
             get {
                 return ResourceManager.GetString("PatientName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to perfumer.png.
+        /// </summary>
+        public static string PerfumerImage {
+            get {
+                return ResourceManager.GetString("PerfumerImage", resourceCulture);
             }
         }
         
@@ -484,11 +745,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to postman.png.
+        /// </summary>
+        public static string PostmanImage {
+            get {
+                return ResourceManager.GetString("PostmanImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Postman.
         /// </summary>
         public static string PostmanName {
             get {
                 return ResourceManager.GetString("PostmanName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to priestess.png.
+        /// </summary>
+        public static string PriestessImage {
+            get {
+                return ResourceManager.GetString("PriestessImage", resourceCulture);
             }
         }
         
@@ -502,11 +781,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to prisoner.png.
+        /// </summary>
+        public static string PrisonerImage {
+            get {
+                return ResourceManager.GetString("PrisonerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &quot;Prisoner&quot;.
         /// </summary>
         public static string PrisonerName {
             get {
                 return ResourceManager.GetString("PrisonerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to professor.png.
+        /// </summary>
+        public static string ProfessorImage {
+            get {
+                return ResourceManager.GetString("ProfessorImage", resourceCulture);
             }
         }
         
@@ -520,11 +817,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to prospector.png.
+        /// </summary>
+        public static string ProspectorImage {
+            get {
+                return ResourceManager.GetString("ProspectorImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Prospector.
         /// </summary>
         public static string ProspectorName {
             get {
                 return ResourceManager.GetString("ProspectorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to psychologist.png.
+        /// </summary>
+        public static string PsychologistImage {
+            get {
+                return ResourceManager.GetString("PsychologistImage", resourceCulture);
             }
         }
         
@@ -556,6 +871,15 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to seer.png.
+        /// </summary>
+        public static string SeerImage {
+            get {
+                return ResourceManager.GetString("SeerImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Seer.
         /// </summary>
         public static string SeerName {
@@ -583,11 +907,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to thief.png.
+        /// </summary>
+        public static string ThiefImage {
+            get {
+                return ResourceManager.GetString("ThiefImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Thief.
         /// </summary>
         public static string ThiefName {
             get {
                 return ResourceManager.GetString("ThiefName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to toy_merchant.png.
+        /// </summary>
+        public static string ToyMerchantImage {
+            get {
+                return ResourceManager.GetString("ToyMerchantImage", resourceCulture);
             }
         }
         
@@ -628,11 +970,29 @@ namespace IDV_Randomizer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to weeping_clown.png.
+        /// </summary>
+        public static string WeepingClownImage {
+            get {
+                return ResourceManager.GetString("WeepingClownImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Weeping Clown.
         /// </summary>
         public static string WeepingClownName {
             get {
                 return ResourceManager.GetString("WeepingClownName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wildling.png.
+        /// </summary>
+        public static string WildlingImage {
+            get {
+                return ResourceManager.GetString("WildlingImage", resourceCulture);
             }
         }
         
