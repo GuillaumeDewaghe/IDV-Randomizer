@@ -8,7 +8,7 @@ namespace IDV_Randomizer.Models
         public static Hunter SmileyFace { get; } = new Hunter(AppResources.SmileyFaceName, AppResources.SmileyFaceImage);
         public static Hunter Gamekeeper { get; } = new Hunter(AppResources.GamekeeperName, AppResources.GamekeeperImage);
         public static Hunter Ripper { get; } = new Hunter(AppResources.RipperName, AppResources.RipperImage);
-        public static Hunter SloulWeaver { get; } = new Hunter(AppResources.SoulWeaverName, AppResources.SoulWeaverImage);
+        public static Hunter SoulWeaver { get; } = new Hunter(AppResources.SoulWeaverName, AppResources.SoulWeaverImage);
         public static Hunter Geisha { get; } = new Hunter(AppResources.GeishaName, AppResources.GeishaImage);
         public static Hunter WuChang { get; } = new Hunter(AppResources.WuChangName, AppResources.WuChangImage);
         public static Hunter Photographer { get; } = new Hunter(AppResources.PhotographerName, AppResources.PhotographerImage);
@@ -24,7 +24,7 @@ namespace IDV_Randomizer.Models
         public static Hunter Sculptor { get; } = new Hunter(AppResources.SculptorName, AppResources.SculptorImage);
         public static Hunter Undead { get; } = new Hunter(AppResources.UndeadName, AppResources.UndeadImage);
         public static Hunter BreakingWheel { get; } = new Hunter(AppResources.BreakingWheelName, AppResources.BreakingWheelImage);
-        public static Hunter Naid { get; } = new Hunter(AppResources.NaiadName, AppResources.NaiadImage);
+        public static Hunter Naiad { get; } = new Hunter(AppResources.NaiadName, AppResources.NaiadImage);
         public static Hunter WaxArtist { get; } = new Hunter(AppResources.WaxArtistName, AppResources.WaxArtistImage);
         public static Hunter Nightmare { get; } = new Hunter(AppResources.NightmareName, AppResources.NightmareImage);
         public static Hunter Clerk { get; } = new Hunter(AppResources.ClerkName, AppResources.ClerkImage);
