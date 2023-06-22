@@ -1,11 +1,4 @@
-﻿using Microsoft.Maui;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IDV_Randomizer.Models
+﻿namespace IDV_Randomizer.Models
 {
     public sealed class Survivor : Character
     {
